@@ -1,1 +1,1 @@
-Mohon maaf karena masih sangat banyak yang kurang. Kedepannya akan dipelajari lagi sendiri dan mengingat juga ini bukan materi yang sanggup dilahap 5 hari ditambah zero experienced dan pekerja kantoran :D
+Sorry mas cuma bisa segini. Selebihnya bakal gua pelajarin lagi sendiri besok. Keknya emang kurang kalo cuma 5 hari buat belajar ginian ditambah 1st time bgt belajar ginian :(
