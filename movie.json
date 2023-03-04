@@ -1,0 +1,102 @@
+{
+  "openapi": "3.0.3",
+  "options" : {
+    "info": {
+      "title": "Movies API 3.0",
+      "description": "Movies API",
+      "contact": {
+        "email": "oainger0@craigslist.org"
+      },
+      "version": "1.0.1"
+    }
+  },
+  
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/movies/{movieId}": {
+      "put": {
+        "summary": "Update selected movie",
+        "tags": [
+          "movies"
+        ],
+        "parameters": [
+          {
+            "name": "movieId",
+            "in": "path",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully update a movie",
+            "content": {
+              "application/json": {
+                "schema": null,
+                "$ref": "#/components/schemas/movie"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete selected movie",
+        "tags": [
+          "movies"
+        ],
+        "parameters": [
+          {
+            "name": "movieId",
+            "in": "path",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully delete a movie",
+            "content": {
+              "application/json": {
+                "schema": null,
+                "$ref": "#/components/schemas/movie"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "movie": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "title": {
+            "type": "string",
+            "example": "Reckless"
+          },
+          "Genres": {
+            "type": "string",
+            "example": "comedy"
+          },
+          "Year": {
+            "type": "integer",
+            "example": 2001
+          }
+        }
+      }
+    }
+  }
+}
